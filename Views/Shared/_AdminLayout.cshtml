@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" asp-area="Admin" asp-controller="Home" asp-action="Index">Equinox Admin</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#adminNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="adminNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Site</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="pt-4">@RenderBody()</main>
